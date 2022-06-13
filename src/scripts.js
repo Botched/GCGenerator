@@ -9,15 +9,17 @@ function onLoad() {
 
 
 const url = "https://swcodegenerator.azurewebsites.net/api/GetCode";
+code = "";
 fetch(url)
   .then(
-    response => response.text() // .json(), .blob(), etc.
-    ,console.log(response.json())
+    function(response) {return response.json()} // .json(), .blob(), etc.
   ).then(
-    text => console.log(text) // Handle here
-  ).then (
-    document.getElementById('code').innerHTML = text
+    function(json) {console.log(json)
+        code = json
+    } // Handle here
   )
+
+document.getElementById('code').innerHTML = code
 
 }
 
