@@ -15,12 +15,10 @@ fetch(url)
     function(response) {return response.json()} // .json(), .blob(), etc.
   ).then(
     function(json) {console.log(json)
-        code = json
+        jsonObj = JSON.parse(json)
+        document.getElementById('code').innerHTML = jsonObj.code
     } // Handle here
   )
-
-document.getElementById('code').innerHTML = code
-
 }
 
 window.onload = onLoad();
