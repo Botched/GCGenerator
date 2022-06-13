@@ -8,8 +8,8 @@ function getCode()
   console.log('Day of year: ' + day);
   var code = 800
   var randomnum = Math.floor(Math.random() * (80000 - 20000 + 1) + 20000)
-
-  document.getElementById('code').innerHTML = "" + day + code + randomnum
+  var valueToSet = "" + day + code + randomnum;
+  document.getElementById('code').innerHTML = valueToSet;
 
 }
 
