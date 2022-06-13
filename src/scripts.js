@@ -9,6 +9,7 @@ function getCode()
   var code = 800
   var randomnum = Math.floor(Math.random() * (80000 - 20000 + 1) + 20000)
   var valueToSet = '' + day + code + randomnum;
+  console.log(valueToSet)
   document.getElementById('code').innerHTML = valueToSet;
 
 }
