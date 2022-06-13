@@ -45,3 +45,9 @@ button {
     font-weight: bold;
     border: 0;
 }
+
+#creator {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 15px;
+}
