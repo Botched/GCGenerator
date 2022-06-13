@@ -15,10 +15,11 @@ main {
   margin: auto;
   width: 80%;
   padding: 20px;
+  padding-top: 5px;
 }
 
 main > h1 {
-  font-size: 3.5em;
+  font-size: 3em;
   margin:0;
 }
 

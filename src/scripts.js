@@ -6,7 +6,20 @@ function onLoad() {
 // request.onload = function() { console.log(data) }
 
 // request.send()
+function getCode()
+{
+  var now = new Date();
+  var start = new Date(now.getFullYear(), 0, 0);
+  var diff = now - start;
+  var oneDay = 1000 * 60 * 60 * 24;
+  var day = Math.floor(diff / oneDay);
+  console.log('Day of year: ' + day);
+  var code = 800
+  var randomnum = Math.floor(Math.random() * (80000 - 20000 + 1) + 20000)
 
+  return "" + day + code + randomnum
+
+}
 
 const url = "https://swcodegenerator.azurewebsites.net/api/GetCode";
 code = "";
@@ -24,19 +37,6 @@ document.getElementById('code').innerHTML = getCode()
 }
 
 
-function getCode()
-{
-  var now = new Date();
-  var start = new Date(now.getFullYear(), 0, 0);
-  var diff = now - start;
-  var oneDay = 1000 * 60 * 60 * 24;
-  var day = Math.floor(diff / oneDay);
-  console.log('Day of year: ' + day);
-  var code = 800
-  var randomnum = Math.floor(Math.random() * (80000 - 20000 + 1) + 20000)
 
-  return "" + day + code + randomnum
-
-}
 
 window.onload = onLoad();
