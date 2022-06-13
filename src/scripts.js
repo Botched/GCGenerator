@@ -15,8 +15,8 @@ fetch(url)
     function(response) {return response.json()} // .json(), .blob(), etc.
   ).then(
     function(json) {console.log(json)
-        jsonObj = JSON.parse(json)
-        document.getElementById('code').innerHTML = jsonObj.code
+        
+        document.getElementById('code').innerHTML = json.code
     } // Handle here
   )
 }
