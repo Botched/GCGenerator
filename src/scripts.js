@@ -1,11 +1,3 @@
-function onLoad() {
-//     var request = new XMLHttpRequest()
-
-// request.open('POST', 'https://swcodegenerator.azurewebsites.net/api/GetCode', true)
-
-// request.onload = function() { console.log(data) }
-
-// request.send()
 function getCode()
 {
   var now = new Date();
@@ -20,6 +12,16 @@ function getCode()
   return "" + day + code + randomnum
 
 }
+
+function onLoad() {
+//     var request = new XMLHttpRequest()
+
+// request.open('POST', 'https://swcodegenerator.azurewebsites.net/api/GetCode', true)
+
+// request.onload = function() { console.log(data) }
+
+// request.send()
+
 
 const url = "https://swcodegenerator.azurewebsites.net/api/GetCode";
 code = "";
