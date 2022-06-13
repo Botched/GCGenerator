@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="scripts.js"></script>
-  <title>Safeway / Fresco Gas Bar Discount Code Generator</title>
+  <title>Safeway Gas Bar Discount Code Generator</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     <p id="code">Please wait...</p>
 
     <div id="buttons">
-      <button onClick="onLoad()">Click/tap for new code</button>
+      <button onClick="document.getElementById('code').innerHTML = 'Please wait'; onLoad()">Click/tap for new code</button>
     </div>
 
   </main>

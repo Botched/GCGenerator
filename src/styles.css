@@ -13,12 +13,13 @@ html, body, p {
 
 main {
   margin: auto;
-  width: 50%;
+  width: 80%;
   padding: 20px;
 }
 
 main > h1 {
   font-size: 3.5em;
+  margin:0;
 }
 
 main > h2 {
