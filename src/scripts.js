@@ -12,10 +12,12 @@ const url = "https://swcodegenerator.azurewebsites.net/api/GetCode";
 fetch(url)
   .then(
     response => response.text() // .json(), .blob(), etc.
+    ,console.log(response.json())
   ).then(
     text => console.log(text) // Handle here
-  );
-
+  ).then (
+    document.getElementById('code').innerHTML = text
+  )
 
 }
 
