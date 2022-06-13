@@ -9,7 +9,7 @@ function getCode()
   var code = 800
   var randomnum = Math.floor(Math.random() * (80000 - 20000 + 1) + 20000)
 
-  return "" + day + code + randomnum
+  document.getElementById('code').innerHTML = "" + day + code + randomnum
 
 }
 
@@ -41,4 +41,4 @@ document.getElementById('code').innerHTML = getCode()
 
 
 
-window.onload = onLoad();
+window.onload = getCode();
